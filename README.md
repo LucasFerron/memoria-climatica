@@ -107,4 +107,4 @@ O detalhamento de cada sprint fica em `docs/sprints/`.
 
 ## Licença
 
-Projeto acadêmico. Defina aqui a licença do código (por exemplo, MIT) e adicione o arquivo `LICENSE` na raiz.
+Projeto acadêmico. Defina aqui a licença do código (por exemplo, MIT) e adicione o arquivo `LICENSE` na raiz.# memoria-climatica
