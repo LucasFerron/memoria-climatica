@@ -1,0 +1,11 @@
+@layer components {
+  .footer {
+    @apply flex flex-col gap-3 bg-cinza px-6 py-6 text-sm md:px-20;
+  }
+  .footer-titulo {
+    @apply font-bold;
+  }
+  .footer-links ul {
+    @apply flex flex-wrap gap-4;
+  }
+}

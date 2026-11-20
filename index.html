@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memória Climática — Mapeamento comunitário de eventos climáticos</title>
+  <meta name="description" content="Veja e registre eventos climáticos da sua região em um mapa colaborativo ligado à ODS 13.">
+  <link rel="stylesheet" href="css/output.css">
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="navbar">
+    <a class="logo" href="index.html">Memória Climática</a>
+    <nav aria-label="Principal">
+      <ul class="menu">
+        <li><a class="link-menu" href="index.html" aria-current="page">Home</a></li>
+        <li><a class="link-menu" href="linha-do-tempo.html">Linha do Tempo</a></li>
+        <li><a class="link-menu" href="sobre-ods13.html">Sobre o ODS 13</a></li>
+        <li><a class="btn btn-principal" href="registrar.html">Registrar acontecimento</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- 1. Apresentação -->
+    <section class="apresentacao" aria-labelledby="titulo-hero">
+      <h1 id="titulo-hero">Memória Climática</h1>
+      <p>Uma plataforma colaborativa para mapear eventos climáticos como enchentes, granizo e secas. Veja o que já aconteceu na sua região e registre o que a sua comunidade viveu.</p>
+      <div class="botoes">
+        <a class="btn btn-principal" href="registrar.html">Registrar acontecimento</a>
+      </div>
+    </section>
+
+    <!-- 2. Filtros por país, estado e cidade -->
+    <section class="section" aria-labelledby="titulo-filtros">
+      <h2 id="titulo-filtros">Filtrar ocorrências por região</h2>
+      <form class="filtros" action="#" method="get">
+        <div class="campo">
+          <label class="rotulo" for="filtro-pais">País</label>
+          <select class="entrada" id="filtro-pais" name="pais">
+            <option value="br" selected>Brasil</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label class="rotulo" for="filtro-estado">Estado</label>
+          <select class="entrada" id="filtro-estado" name="estado">
+            <option value="sc" selected>Santa Catarina</option>
+            <option value="rs">Rio Grande do Sul</option>
+            <option value="pr">Paraná</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label class="rotulo" for="filtro-cidade">Cidade</label>
+          <select class="entrada" id="filtro-cidade" name="cidade">
+            <option value="chapeco" selected>Chapecó</option>
+            <option value="xanxere">Xanxerê</option>
+            <option value="pinhalzinho">Pinhalzinho</option>
+          </select>
+        </div>
+        <div class="botoes-filtro">
+          <button class="btn btn-principal" type="submit">Aplicar filtros</button>
+          <button class="btn btn-secundario" type="reset">Limpar</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- 3. Mapa geral -->
+    <section class="section fundo-cinza" aria-labelledby="titulo-mapa">
+      <h2 id="titulo-mapa">Mapa geral de ocorrências</h2>
+      <figure class="mapa">
+        <iframe title="Mapa da região de Chapecó (OpenStreetMap)" src="https://www.openstreetmap.org/export/embed.html?bbox=-52.72%2C-27.17%2C-52.52%2C-27.04&amp;layer=mapnik&amp;marker=-27.1004%2C-52.6152" loading="lazy"></iframe>
+        <figcaption>Mapa ilustrativo. Os marcadores dos relatos serão adicionados em uma próxima fase.</figcaption>
+      </figure>
+    </section>
+
+    <!-- 4. Caminhos para as outras páginas -->
+    <section class="section" aria-labelledby="titulo-explorar">
+      <h2 id="titulo-explorar">Explore o projeto</h2>
+      <div class="lista-cards">
+        <article class="card">
+          <h3 class="titulo-card">Linha do Tempo</h3>
+          <p>Veja como um local foi afetado por eventos climáticos ao longo do tempo.</p>
+          <a class="btn btn-secundario" href="linha-do-tempo.html">Ver a Linha do Tempo</a>
+        </article>
+        <article class="card">
+          <h3 class="titulo-card">Sobre o ODS 13</h3>
+          <p>Entenda o objetivo de ação contra a mudança global do clima e como o site contribui.</p>
+          <a class="btn btn-secundario" href="sobre-ods13.html">Conhecer o ODS 13</a>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p class="footer-titulo">Memória Climática</p>
+    <nav class="footer-links" aria-label="Rodapé">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="registrar.html">Registrar acontecimento</a></li>
+        <li><a href="linha-do-tempo.html">Linha do Tempo</a></li>
+        <li><a href="sobre-ods13.html">Sobre o ODS 13</a></li>
+      </ul>
+    </nav>
+    <p class="creditos">Projeto acadêmico · UFFS Campus Chapecó · Ciência da Computação</p>
+  </footer>
+</body>
+</html>
