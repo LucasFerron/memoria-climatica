@@ -1,0 +1,8 @@
+@layer components {
+  .texto {
+    @apply space-y-3;
+  }
+  .citacao {
+    @apply border-l-4 border-principal bg-cinza p-4 italic;
+  }
+}

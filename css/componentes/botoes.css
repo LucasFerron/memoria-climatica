@@ -1,0 +1,11 @@
+@layer components {
+  .btn {
+    @apply inline-block rounded border-2 border-principal px-4 py-2 font-semibold;
+  }
+  .btn-principal {
+    @apply bg-principal text-fundo;
+  }
+  .btn-secundario {
+    @apply bg-fundo text-principal;
+  }
+}

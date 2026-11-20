@@ -1,0 +1,32 @@
+@layer base {
+  body {
+    @apply bg-fundo text-texto;
+  }
+  h1 {
+    @apply text-4xl font-bold;
+  }
+  h2 {
+    @apply text-2xl font-bold;
+  }
+  h3 {
+    @apply text-xl font-semibold;
+  }
+}
+
+@layer components {
+  .pular-conteudo {
+    @apply sr-only focus:not-sr-only;
+  }
+  .section {
+    @apply px-6 py-10 md:px-20;
+  }
+  .section h2 {
+    @apply mb-4;
+  }
+  .fundo-cinza {
+    @apply bg-cinza;
+  }
+  .cabecalho-pagina {
+    @apply bg-cinza px-6 py-10 md:px-20;
+  }
+}

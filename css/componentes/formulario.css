@@ -1,0 +1,17 @@
+@layer components {
+  .filtros {
+    @apply grid gap-4 md:grid-cols-3;
+  }
+  .campo {
+    @apply flex flex-col gap-1;
+  }
+  .rotulo {
+    @apply text-sm font-medium;
+  }
+  .entrada {
+    @apply rounded border border-borda p-2;
+  }
+  .botoes-filtro {
+    @apply flex gap-3 md:col-span-3;
+  }
+}

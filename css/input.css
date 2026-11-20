@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@import "./tema.css";
+@import "./base.css";
+
+@import "./componentes/botoes.css";
+@import "./componentes/navbar.css";
+@import "./componentes/footer.css";
+@import "./componentes/formulario.css";
+
+@import "./paginas/home.css";
+@import "./paginas/sobre.css";
