@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linha do Tempo — Memória Climática</title>
+  <meta name="description" content="Acompanhe ocorrências climáticas ao longo do tempo na sua região.">
+  <link rel="stylesheet" href="css/output.css">
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="navbar">
+    <a class="logo" href="index.html">Memória Climática</a>
+    <nav aria-label="Principal">
+      <ul class="menu">
+        <li><a class="link-menu" href="index.html">Home</a></li>
+        <li><a class="link-menu" href="linha-do-tempo.html" aria-current="page">Linha do Tempo</a></li>
+        <li><a class="link-menu" href="sobre-ods13.html">Sobre o ODS 13</a></li>
+        <li><a class="btn btn-principal" href="registrar.html">Registrar acontecimento</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="section" aria-labelledby="titulo-timeline">
+      <h1 id="titulo-timeline">Linha do Tempo</h1>
+      <p>Histórico ilustrativo de eventos climáticos extremos e impactos relatados pela comunidade. Visualização estática sem JavaScript.</p>
+
+      <form class="filtros" action="#" method="get" aria-label="Filtros ilustrativos da linha do tempo">
+        <div class="campo">
+          <label class="rotulo" for="filtro-tipo">Tipo de evento</label>
+          <select class="entrada" id="filtro-tipo" name="tipo" disabled>
+            <option value="">Todos (exemplo)</option>
+            <option value="enchente">Enchente / Alagamento</option>
+            <option value="granizo">Granizo / Tempestade</option>
+            <option value="seca">Seca / Estiagem</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label class="rotulo" for="filtro-periodo">Período</label>
+          <select class="entrada" id="filtro-periodo" name="periodo" disabled>
+            <option value="">2023 – 2026</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+          </select>
+        </div>
+      </form>
+    </section>
+
+    <section class="section fundo-cinza" aria-label="Ocorrências registradas">
+      <ol class="timeline-lista">
+        <li class="timeline-item">
+          <span class="timeline-data">Maio de 2024</span>
+          <article class="card">
+            <span class="tag tag-enchente">Enchente</span>
+            <h2 class="titulo-card">Inundações e alagamentos severos</h2>
+            <p class="timeline-local">Região Sul · Relato ilustrativo</p>
+            <p>Elevação intensa do nível da água, atingindo vias, áreas urbanas e rurais e exigindo medidas de acolhimento.</p>
+          </article>
+        </li>
+
+        <li class="timeline-item">
+          <span class="timeline-data">Agosto de 2023</span>
+          <article class="card">
+            <span class="tag tag-granizo">Granizo</span>
+            <h2 class="titulo-card">Tempestade de granizo na região</h2>
+            <p class="timeline-local">Chapecó e Oeste de SC · Relato ilustrativo</p>
+            <p>Queda de granizo com danos em telhados, residências e enxurradas em diferentes pontos da cidade.</p>
+          </article>
+        </li>
+
+        <li class="timeline-item">
+          <span class="timeline-data">Setembro de 2024</span>
+          <article class="card">
+            <span class="tag tag-seca">Seca</span>
+            <h2 class="titulo-card">Estiagem prolongada e baixa umidade</h2>
+            <p class="timeline-local">Municípios afetados · Relato ilustrativo</p>
+            <p>Período seco prolongado com impacto sobre lavouras, reservas hídricas e abastecimento local.</p>
+          </article>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-titulo">Memória Climática</p>
+    <nav class="footer-links" aria-label="Rodapé">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="registrar.html">Registrar acontecimento</a></li>
+        <li><a href="linha-do-tempo.html">Linha do Tempo</a></li>
+        <li><a href="sobre-ods13.html">Sobre o ODS 13</a></li>
+      </ul>
+    </nav>
+    <p class="creditos">Projeto acadêmico · UFFS Campus Chapecó · Ciência da Computação</p>
+  </footer>
+</body>
+</html>

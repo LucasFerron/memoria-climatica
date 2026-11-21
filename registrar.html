@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar Acontecimento — Memória Climática</title>
+  <meta name="description" content="Tela de exemplo para registro ilustrativo de eventos climáticos.">
+  <link rel="stylesheet" href="css/output.css">
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="navbar">
+    <a class="logo" href="index.html">Memória Climática</a>
+    <nav aria-label="Principal">
+      <ul class="menu">
+        <li><a class="link-menu" href="index.html">Home</a></li>
+        <li><a class="link-menu" href="linha-do-tempo.html">Linha do Tempo</a></li>
+        <li><a class="link-menu" href="sobre-ods13.html">Sobre o ODS 13</a></li>
+        <li><a class="btn btn-principal" href="registrar.html" aria-current="page">Registrar acontecimento</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="section" aria-labelledby="titulo-registro">
+      <h1 id="titulo-registro">Registrar acontecimento</h1>
+      <p>Tela de exemplo estática (sem JavaScript): os campos ilustram as informações previstas para o relato, mas o envio não grava dados.</p>
+
+      <div class="registro-layout">
+        <form class="formulario-registro" action="#" method="post" onsubmit="return false;">
+          <fieldset class="grupo-campos">
+            <legend>Dados do evento</legend>
+
+            <div class="campo">
+              <label class="rotulo" for="tipo-evento">Tipo de evento</label>
+              <select class="entrada" id="tipo-evento" name="tipo-evento">
+                <option value="">Selecione</option>
+                <option value="enchente">Enchente / Alagamento</option>
+                <option value="granizo">Granizo / Tempestade</option>
+                <option value="seca">Seca / Estiagem</option>
+                <option value="outro">Outro evento climático</option>
+              </select>
+            </div>
+
+            <div class="campo">
+              <label class="rotulo" for="data-evento">Data aproximada</label>
+              <input class="entrada" id="data-evento" name="data-evento" type="date">
+            </div>
+
+            <div class="campo">
+              <label class="rotulo" for="local-evento">Cidade, bairro ou comunidade</label>
+              <input class="entrada" id="local-evento" name="local-evento" type="text" placeholder="Ex.: Chapecó - SC, Bairro Efapi">
+            </div>
+
+            <div class="campo">
+              <label class="rotulo" for="descricao-evento">Descrição do ocorrido</label>
+              <textarea class="entrada" id="descricao-evento" name="descricao-evento" rows="4" placeholder="Descreva o que aconteceu e os impactos na área..."></textarea>
+            </div>
+
+            <div class="campo">
+              <label class="rotulo" for="foto-evento">Foto do evento (ilustrativo)</label>
+              <input class="entrada" id="foto-evento" name="foto-evento" type="file" accept="image/*">
+            </div>
+          </fieldset>
+
+          <div class="botoes-filtro">
+            <button class="btn btn-principal" type="submit">Enviar relato (exemplo)</button>
+            <button class="btn btn-secundario" type="reset">Limpar</button>
+          </div>
+        </form>
+
+        <aside class="card registro-orientacoes" aria-label="Orientações de preenchimento">
+          <h2 class="titulo-card">Orientações do protótipo</h2>
+          <p>Este formulário é apenas uma demonstração visual da interface na Sprint 2.</p>
+          <ul>
+            <li>Informe o tipo de ocorrência e a data aproximada.</li>
+            <li>Indique o local para situar o acontecimento.</li>
+            <li>Não insira dados pessoais sensíveis de terceiros.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-titulo">Memória Climática</p>
+    <nav class="footer-links" aria-label="Rodapé">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="registrar.html">Registrar acontecimento</a></li>
+        <li><a href="linha-do-tempo.html">Linha do Tempo</a></li>
+        <li><a href="sobre-ods13.html">Sobre o ODS 13</a></li>
+      </ul>
+    </nav>
+    <p class="creditos">Projeto acadêmico · UFFS Campus Chapecó · Ciência da Computação</p>
+  </footer>
+</body>
+</html>
