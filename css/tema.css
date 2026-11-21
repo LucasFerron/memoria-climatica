@@ -1,8 +1,17 @@
 /* Cores provisórias: trocar pelos códigos da paleta do grupo */
 @theme {
-  --color-fundo: #ffffff;
-  --color-cinza: #f3f3f3;
-  --color-borda: #d4d4d4;
-  --color-texto: #1f1f1f;
-  --color-principal: #1f1f1f;
+  --color-fundo: #f8fafc;           /* Off-white suave */
+  --color-cinza: #f1f5f9;           /* Cinza claro (.fundo-cinza) */
+  --color-borda: #cbd5e1;           /* Borda neutra suave */
+  --color-texto: #1e293b;           /* Cinza escuro para boa leitura */
+  --color-principal: #0284c7;       /* Azul céu para ações/destaques */
+
+  /* Tons pastéis de apoio (enchente, vegetação/ODS 13 e solo/seca) */
+  --color-azul-pastel: #e0f2fe;
+  --color-azul-escuro: #0369a1;
+  --color-verde-pastel: #d1fae5;
+  --color-verde-escuro: #047857;
+  --color-terracota-pastel: #ffedd5;
+  --color-terracota-escuro: #9a3412;
+  --color-texto-suave: #475569;
 }

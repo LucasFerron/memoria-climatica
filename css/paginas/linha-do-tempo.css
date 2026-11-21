@@ -1,0 +1,49 @@
+@layer components {
+  .timeline-lista {
+    @apply list-none p-0 m-0 flex flex-col gap-6 border-l-2 border-borda pl-6 ml-2;
+  }
+
+  .timeline-item {
+    @apply flex flex-col gap-2;
+  }
+
+  .timeline-data {
+    @apply inline-block w-fit px-3 py-1 rounded-full text-xs font-semibold bg-azul-pastel text-azul-escuro;
+  }
+
+  .timeline-item .card {
+    @apply bg-fundo border-l-4;
+  }
+
+  .timeline-item:has(.tag-enchente) .card {
+    @apply border-l-azul-escuro bg-azul-pastel/25;
+  }
+
+  .timeline-item:has(.tag-granizo) .card {
+    @apply border-l-verde-escuro bg-verde-pastel/25;
+  }
+
+  .timeline-item:has(.tag-seca) .card {
+    @apply border-l-terracota-escuro bg-terracota-pastel/30;
+  }
+
+  .timeline-local {
+    @apply text-xs text-texto-suave mb-2;
+  }
+
+  .tag {
+    @apply inline-block w-fit px-2.5 py-0.5 rounded text-xs font-semibold mb-2;
+  }
+
+  .tag-enchente {
+    @apply bg-azul-pastel text-azul-escuro;
+  }
+
+  .tag-granizo {
+    @apply bg-verde-pastel text-verde-escuro;
+  }
+
+  .tag-seca {
+    @apply bg-terracota-pastel text-terracota-escuro;
+  }
+}
